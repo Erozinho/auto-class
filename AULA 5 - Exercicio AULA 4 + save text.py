@@ -4,8 +4,10 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.keys import Keys
 from time import sleep
 from datetime import datetime
+import os
 
-service = Service('C:\\Users\\felaraujo\\Downloads\\chromedriver.exe')
+user = os.path.expanduser('~')
+service = Service(user+'\\Downloads\\chromedriver.exe')
 
 
 def get_driver():

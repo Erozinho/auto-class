@@ -1,8 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
+import os
 
-service = Service('C:\\Users\\felaraujo\\Downloads\\chromedriver.exe')
+user = os.path.expanduser('~')
+service = Service(user+'\\Downloads\\chromedriver.exe')
 
 
 def get_driver():
