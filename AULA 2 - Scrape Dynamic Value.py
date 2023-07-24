@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
+from time import sleep
 
 service = Service('C:\\Users\\felaraujo\\Downloads\\chromedriver.exe')
 
@@ -20,11 +21,18 @@ def get_driver():
     return driver
 
 
+def clean_text(text):
+    """Extrair o valor exato de temperatura"""
+    output = float(text.split(": ")[1])
+    return output
+
+
 def main():
     """Função principal"""
     driver = get_driver()
-    element = driver.find_element(By.XPATH, "/html/body/div[1]/div/h1[1]")
-    return element.text
+    sleep(2)
+    element = driver.find_element(By.XPATH, "/html/body/div[1]/div/h1[2]")
+    return clean_text(element.text)
 
 
 print(main())
