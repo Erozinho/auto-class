@@ -33,10 +33,9 @@ def clean_text(text):
 
 def write_file(text):
     """Salva o texto em arquivo de texto"""
-    now  = datetime.now()
-    name = now.strftime("%d-%m-%Y %H-%M-%S")
+    name  = datetime.now().strftime("%d-%m-%Y %H-%M-%S")
     with open(f"{name}.txt", "w", encoding="UTF-8") as file:
-        file.write(str(text))
+        file.write(text)
 
 def main():
     """Função principal"""
@@ -51,7 +50,7 @@ def main():
     while True:
         sleep(2)
         element = driver.find_element(By.XPATH, "/html/body/div[1]/div/h1[2]")
-        text = clean_text(element.text)
+        text = str(clean_text(element.text))
         write_file(text)
 
 
