@@ -11,6 +11,7 @@ def get_news(country, api_key='057a19ba5af941e2addba5265f0b265e'):
         results.append(F"TITLE\n{article['title']}, \nDESCRIPTION: {article['description']}")
     return results
 
+
 country = input('Enter your desire Country(us, br, fr, jp...):\n')
 
 print(get_news(country))
