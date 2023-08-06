@@ -3,7 +3,7 @@ from time import sleep
 import pandas
 
 sender = 'felipe9a.cva@gmail.com'
-receiver = 'zenycsoficial@gmail.com'
+receiver = 'felipe9a.cva@gmail.com'
 password = input('Your Password:\n')
 
 yag = yagmail.SMTP(user=sender, password=password)

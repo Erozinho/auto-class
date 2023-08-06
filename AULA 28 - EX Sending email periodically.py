@@ -2,7 +2,7 @@ import yagmail
 from time import sleep
 
 sender = 'felipe9a.cva@gmail.com'
-receiver = 'zenycsoficial@gmail.com'
+receiver = 'felipe9a.cva@gmail.com'
 
 subject = 'EMAIL TESTE!'
 

@@ -3,7 +3,7 @@ from time import sleep
 from datetime import datetime as dt
 
 sender = 'felipe9a.cva@gmail.com'
-receiver = 'zenycsoficial@gmail.com'
+receiver = 'felipe9a.cva@gmail.com'
 
 subject = 'EMAIL TESTE!'
 
