@@ -11,7 +11,7 @@ def get_weather():
     city = r['city']['name']
 
     # Abre o arquivo desejado
-    with open('automations-lessons\AULA12.txt', 'a', encoding='utf-8') as file:
+    with open('auto-class\AULA12.txt', 'a', encoding='utf-8') as file:
 
         # Percorre a lista de informações recolhendo os valores desejados
         for x in r['list']:

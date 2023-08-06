@@ -9,7 +9,7 @@ subject = 'EMAIL TESTE!'
 
 content = ["""
 EMAIL TESTE FAVOR IGNORAR!
-""", 'automations-lessons\\contacts.csv']
+""", 'auto-class\\contacts.csv']
 
 yag = yagmail.SMTP(user=sender, password=password)
 yag.send(to=receiver,subject=subject,contents=content)

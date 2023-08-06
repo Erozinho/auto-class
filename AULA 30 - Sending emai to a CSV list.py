@@ -6,7 +6,7 @@ password = input('type your password:\n')
 
 subject = 'EMAIL TESTE!'
 
-df = pandas.read_csv('automations-lessons\\contacts.csv')
+df = pandas.read_csv('auto-class\\contacts.csv')
 
 yag = yagmail.SMTP(user=sender, password=password)
 

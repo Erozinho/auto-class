@@ -1,7 +1,7 @@
 from pathlib import Path
 from datetime import datetime as dt
 
-root_dir = Path('automations-lessons/AULA 20')
+root_dir = Path('auto-class/AULA 20')
 file_paths = root_dir.glob('**/*')
 
 for path in file_paths:

@@ -1,6 +1,6 @@
 from pathlib import Path
 
-root_dir = Path('automations-lessons/teste')
+root_dir = Path('auto-class/teste')
 file_paths = root_dir.glob('**/*')
 
 for path in file_paths:

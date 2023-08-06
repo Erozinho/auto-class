@@ -1,6 +1,6 @@
 from pathlib import Path
 
-root_dir = Path('automations-lessons/AULA 21')
+root_dir = Path('auto-class/AULA 21')
 file_paths = root_dir.glob('**/*')
 
 # for path in root_dir.rglob("*.csv"):

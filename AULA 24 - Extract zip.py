@@ -1,8 +1,8 @@
 from pathlib import Path
 import zipfile
 
-root_dir = Path('automations-lessons/')
-destination = Path('automations-lessons/AULA 24')
+root_dir = Path('auto-class/')
+destination = Path('auto-class/AULA 24')
 
 for path in root_dir.glob("*.zip"):
     with zipfile.ZipFile(path, 'r') as zf:

@@ -13,5 +13,5 @@ image_url = (data['images'][0]['source'])
 
 image_bytes = requests.get(image_url).content
 
-with open('automations-lessons/image.jpg', 'wb') as file:
+with open('auto-class/image.jpg', 'wb') as file:
     file.write(image_bytes)

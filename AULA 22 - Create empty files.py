@@ -1,6 +1,6 @@
 from pathlib import Path
 
-root_dir= Path('automations-lessons/AULA 22')
+root_dir= Path('auto-class/AULA 22')
 
 for i in range(10, 21):
     filename = str(i) + '.txt'
