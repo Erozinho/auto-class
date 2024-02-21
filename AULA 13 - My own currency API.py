@@ -14,8 +14,9 @@ app.config ['SECRET KEY'] = 'API123'
 def home(c1, c2):
     currency = get_currency(c1,c2)
     value = {'from':c1, 'to':c2, 'currency': currency}
-    json_object = json.dumps(value, indent = 4) 
+    json_object = json.dumps(value, indent = 4)
     return  json_object
+
 
 def clean_text(currency, out):
     """Limpa o texto para informar o valor"""
